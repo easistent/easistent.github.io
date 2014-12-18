@@ -1,0 +1,101 @@
+/* menu */
+#menu-logo {
+    margin: 0 24px 0  -15px;
+    line-height: 64px;
+    padding: 0 24px;
+    background: #24272a;
+    color: #fff;
+    font-size: 20px;
+}
+
+#page-menu {
+    margin-bottom: -64px;
+    position: absolute;
+    width: 260px;
+    height: 100%;
+    left: 0;
+    top: 64px;
+    background: #24272a;
+    overflow: hidden;
+
+    -webkit-transition: width 400ms ease-out;
+    -moz-transition: width 400ms ease-out;
+    -ms-transition: width 400ms ease-out;
+    -o-transition: width 400ms ease-out;
+    transition: width 400ms ease-out;
+}
+
+#page-menu.closed {
+    width: 0;
+}
+
+#page-menu .submenu {
+    background: #2d343a;
+}
+
+#page-menu .menu,
+#page-menu .submenu {
+    overflow: hidden;
+
+    -webkit-transition: max-height 1s;
+    transition: max-height 1s;
+}
+
+#page-menu .menu.closed,
+#page-menu .submenu.closed {
+    max-height: 0;
+
+    -webkit-transition: max-height 0;
+    transition: max-height 0;
+}
+
+#page-menu .notification-small {
+    margin-left: 30px;
+    float: right;
+}
+
+#page-menu .notification-small,
+#page-menu .icon-arrow-down,
+#page-menu .icon-arrow-up {
+    visibility: visible;
+
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+}
+
+#page-menu.closed .notification-small,
+#page-menu.closed .icon-arrow-down,
+#page-menu.closed .icon-arrow-up {
+    visibility: hidden;
+
+    -webkit-transition-delay: 0;
+    transition-delay: 0;
+}
+
+#page-menu .submenu .title {
+    font-size: 20px;
+    font-style: italic;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+#page-menu .nav.navbar-stacked li a {
+    padding: 16px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+#page-menu .nav.navbar-stacked li a:not(.no_hover):hover,
+#page-menu .nav.navbar-stacked li a:not(.no_hover):focus {
+    background: #007bac;
+}
+
+#page-menu .nav.navbar-stacked li a.no_hover:hover,
+#page-menu .nav.navbar-stacked li a.no_hover:focus {
+    background: none;
+}
+
+#page-menu  [class^="icon-"] {
+    margin-right: 16px;
+}
+/* end of menu */

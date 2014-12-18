@@ -1,0 +1,49 @@
+.master-header {
+    background: #007bac;
+    font-size: 16px;
+    border: none;
+}
+
+.master-header h1 {
+    margin: 0;
+}
+
+.navbar-brand {
+    height: 64px;
+}
+
+.master-header h1 > a {
+    font-size: 32px;
+    line-height: 64px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 64px;
+}
+
+#header-title {
+    padding-top: 0;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+#header-titl:focus,
+#header-title:hover {
+    color: #fff;
+}
+
+.master-header ul.nav.navbar-nav {
+    margin-right: 4px;
+}
+
+/*#menu-logo {
+    float: left;
+    height: 64px;
+    width: 64px;
+    background: #24272a;
+    margin-left: -15px;
+}*/

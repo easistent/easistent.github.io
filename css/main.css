@@ -1,0 +1,66 @@
+/* Global styles used across all app */
+/* used for header, cointainer, footer, etc */
+
+body {
+    font-family: 'Open Sans';
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.notification-small:not(:empty) {
+    background: #d61d1d;
+    border-radius: 2px;
+    height: 16px;
+    min-width: 16px;
+    padding: 0 2px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* import icon font */
+/* list of characters with their content numbers are at the bottom */
+@font-face {
+    font-family: 'icons';
+    src:url('/assets/fonts/icons.eot');
+    src:url('/assets/fonts/icons.eot') format('embedded-opentype'),
+        url('/assets/fonts/icons.woff') format('woff'),
+        url('/assets/fonts/icons.ttf') format('truetype'),
+        url('/assets/fonts/icons.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* END icon font */
+
+
+/* Main container responsive shift */
+
+@media (min-width: 1170px) {
+    .container-shift {
+        margin-left: 0;
+        padding-left: 295px; /* menu width + 35padding */
+        padding-right: 35px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1450px) {
+    .container-shift {
+        width: 1450px;
+    }
+}
+
+
+@media (min-width: 1720px) {
+    .container-shift {
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 1170px;
+    }
+}
+
+/* END Main container responsive shift */

@@ -1,0 +1,33 @@
+<footer class="master-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <p class="text-center">
+                    <strong>
+                        &copy; 2015 &middot;
+                        eAsistent &middot;
+                        eŠola d.o.o. &middot;
+                        <a href="#" target="_blank">General terms</a>
+                    </strong>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="{{ "/assets/jesl/jesl.min.js" | prepend: site.baseurl }}"></script>
+<script>{% include menu.js %}</script>
+<script>
+    var page_id = window.location.pathname.replace(/\//gi, '_');
+    var ignore_pages = '';
+</script>
+<!-- Google Analytics -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
