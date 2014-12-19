@@ -19,6 +19,4 @@ This script was used on a production site for about two years in combination wit
 
 It's light with no requirements except for the server side, that can be easily rewritten in something else. Now it's PHP and MySQL.
 
-**[Live Demo](http://mclion.tuinzdaj.net/2linesads/demo.html "live demo")**
-
-If you're interested, you can find it on [github]().
+If you're interested, you can find it on [github](https://github.com/easistent/2linesads).
