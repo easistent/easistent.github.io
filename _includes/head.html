@@ -42,7 +42,7 @@
     <meta property="og:title" content="{{ site.title }}" />{% endif %}
     {% if site.title %}<meta property="og:site_name" content="{{ site.title }}" />{% endif %}
     {% if page.url %}<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    {% else %}<meta property="og:url" content="{{ canonical }}">{% endif %}
+    {% else %}<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">{% endif %}
     {% if page.date %}<meta property="article:published_time" content="{{page.date | date_to_xmlschema}}" />{% endif %}
     {% if site.owner_link %}<meta property="article:author" content="{{ site.owner_link }}" />{% endif %}
     {% if page.content %}<meta property="og:description" content="{{ description | strip_html | truncatewords:70 }}" />{% endif %}
@@ -60,7 +60,5 @@
     {% if page.title %}<meta itemprop="name" content="{{ page.title }}">{% else %}<meta itemprop="name" content="{{ site.title }}">{% endif %}
     <meta itemprop="description" content="{{ description | strip_html | truncatewords:70 }}">
     {% if page.share_image %}<meta itemprop="image" content="{{ site.blog_images_url }}{{ page.share_image }}">{% endif %}
-
-
 
 </head>
