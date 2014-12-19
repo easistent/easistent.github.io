@@ -1,0 +1,28 @@
+.well h1 {
+    color: #007bac;
+    font-size: 1.4em;
+}
+
+
+.well a,
+.well a:hover  {
+    color: #007bac;
+}
+.well h2 {
+    color: #007bac;
+    font-size: 1em;
+    float: right;
+}
+
+.well {
+    background-color: #e8ecf0;
+}
+
+body {
+    color: #666;
+}
+
+.readmore {
+    color: #007bac;
+    font-size: 1em;
+}
