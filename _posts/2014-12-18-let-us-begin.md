@@ -4,6 +4,7 @@ title:  "Let's begin"
 date:   2014-12-18 14:40:03
 categories: misc
 author: Marko Milost McLion
+author_nick: mclion
 ---
 Hello!
 
@@ -19,5 +20,3 @@ Now we've decided to made our development a little more open. We'll share some o
 
 So this is the first post. Come back soon for more. :)
 
-
-*Marko Milost - McLion*

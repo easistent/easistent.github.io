@@ -2,14 +2,15 @@
 layout: default
 ---
 <div class="post">
-
-  <header class="post-header">
+  <header class="post-header well">
+    <div class="profile_picture">{% if page.author%} <img src="/assets/images/authors/{{ page.author_nick }}.jpg"> {% else %} <img src="/assets/images/authors/easistent.png"> {% endif %}</div>
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
   <article class="post-content">
     {{ content }}
+    {% if page.author %} <p class="signature">{{ page.author }} </p>{% endif %}
   </article>
 
 </div>
